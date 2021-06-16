@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net5.0;netcoreapp3.1;netstandard2.0;net48;net461</TargetFrameworks>
+    <AssemblyName>Poetry.Chinese</AssemblyName>
+    <RootNamespace>Poetry.Chinese</RootNamespace>
+    <PackageId>Poetry.Chinese</PackageId>
+    <Product>Chinese Poetry</Product>
+    <Authors>Kingcean Tuan</Authors>
+    <Company>Nanchang Jinchen Software Co., Ltd.</Company>
+    <Version>0.1.0</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
+    <Description>Chinese poetry lirary.</Description>
+    <Copyright>Copyright (c) 2021 Kingcean Tuan.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/nuscien/trivial/wiki/core</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <RepositoryUrl>https://github.com/nuscien/trivial</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageTags>poetry</PackageTags>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DocumentationFile>..\bin\$(Configuration)\$(TargetFramework)\Poetry.Chinese.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DocumentationFile>..\bin\$(Configuration)\$(TargetFramework)\Poetry.Chinese.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'net48' OR '$(TargetFramework)' == 'net461'">
+    <DefineConstants>NETOLDVER</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Trivial" Version="3.7.2" />
+  </ItemGroup>
+
+</Project>
