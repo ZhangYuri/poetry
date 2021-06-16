@@ -4,6 +4,13 @@ This library includes the .NET implementation to read data from [chinese-poetry 
 
 [![MIT licensed](./docs/assets/badge_lisence_MIT.svg)](https://github.com/nuscien/trivial/blob/master/LICENSE)
 
+![.NET 6](./docs/assets/badge_NET_6.svg)
+![.NET 5](./docs/assets/badge_NET_5.svg)
+![.NET Core 3.1](./docs/assets/badge_NET_Core_3_1.svg)
+![.NET Standard 2.0](./docs/assets/badge_NET_Standard_2_0.svg)
+![.NET Framework 4.8](./docs/assets/badge_NET_Fx_4_8.svg)
+![.NET Framework 4.6.1](./docs/assets/badge_NET_Fx_4_6_1.svg)
+
 ## Setup
 
 You need make sure the original data folder `chinese-poetry` is in the directory that your app is in.
@@ -29,15 +36,19 @@ You can load following poetry collections.
 - `await LoadSouthernTangPoetryAsync()` Get the Southern Tang Poetry 南唐词.
 - `await LoadCaocaoAnthologyAsync()` Get the Caocao Anthology 曹操诗集.
 
+## Build
+
+Open `Poetry.sln` solution file and build by Visual Studio. The output libraries and files will be in `bin\Debug` or `bin\Release` directory.
+
 ## CLI
 
-You can run following on Windows.
+You can open the `Poetry.Chinese.exe` application file directly or run following on Windows.
 
 ```sh
 .\Poetry.Chinese
 ```
 
-For macOS and Linux, you can type following command to run.
+And for macOS and Linux, you can execute following command.
 
 ```sh
 dotnet Poetry.Chinese.dll
