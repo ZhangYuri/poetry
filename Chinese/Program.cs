@@ -16,6 +16,10 @@ namespace Poetry.Chinese
 {
     class Program
     {
+#if NET5_0_OR_GREATER
+        private static bool enableConvert = true;
+#endif
+
         static async Task Main(string[] args)
         {
             Console.WriteLine("Chinese Poetry");
@@ -260,7 +264,7 @@ namespace Poetry.Chinese
             else
             {
 #if NET5_0_OR_GREATER
-                if (OperatingSystem.IsWindows())
+                if (enableConvert && OperatingSystem.IsWindows())
                 {
                     var qc = new List<string> { q };
                     try
@@ -272,6 +276,7 @@ namespace Poetry.Chinese
                     }
                     catch (ArgumentException)
                     {
+                        enableConvert = false;
                     }
 
                     var author = menu.GetAuthorByName(qc).FirstOrDefault();
