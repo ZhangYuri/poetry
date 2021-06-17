@@ -36,10 +36,6 @@ You can load following poetry collections.
 - `await LoadSouthernTangPoetryAsync()` Get the Southern Tang Poetry 南唐词.
 - `await LoadCaocaoAnthologyAsync()` Get the Caocao Anthology 曹操诗集.
 
-## Build
-
-Open `Poetry.sln` solution file and build by Visual Studio. The output libraries and files will be in `bin\Debug` or `bin\Release` directory.
-
 ## CLI
 
 You can open the `Poetry.Chinese.exe` application file directly or run following on Windows.
@@ -53,3 +49,7 @@ And for macOS and Linux, you can execute following command.
 ```sh
 dotnet Poetry.Chinese.dll
 ```
+
+## Build
+
+Open `Poetry.sln` solution file and build by Visual Studio. The output libraries and files will be in `bin\Debug` or `bin\Release` directory.
