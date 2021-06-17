@@ -197,7 +197,7 @@ namespace Poetry.Chinese
             Console.WriteLine("where");
             Console.WriteLine("  type:");
             Console.WriteLine("    tangshi \t\tSearch for the Tang Poetry (唐诗).");
-            Console.WriteLine("    nantangtangci \tSearch for the Southern Tang Poetry (南唐词).");
+            Console.WriteLine("    nantangci \t\tSearch for the Southern Tang Poetry (南唐词).");
             Console.WriteLine("    huajianji \t\tSearch for the Huajian Anthology (花间集).");
             Console.WriteLine("    songshi \t\tSearch for the Song Poetry (宋诗).");
             Console.WriteLine("    songci  \t\tSearch for the Song Lyrics (宋词).");
